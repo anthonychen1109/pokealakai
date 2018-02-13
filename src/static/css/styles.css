@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin-bottom: 0; }
+
+.svgFlag {
+  width: 100%;
+  height: 64px; }
+  .svgFlag polyline {
+    fill: #6AB745;
+    stroke-width: 0; }
+
+.header {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
+  .header img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80%; }
+
+.signature {
+  background: linear-gradient(#BBE6F6, white);
+  padding-top: 40px; }
+  .signature h2 {
+    background-color: #6AB745;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%); }
+  .signature p {
+    padding-top: 10px;
+    text-align: center; }
+
+.signature-item-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  text-align: center; }
+
+.signature-desc {
+  margin: 0 auto;
+  width: 50%; }
+
+.build-menu {
+  display: flex;
+  justify-content: space-evenly; }
+  .build-menu .build-right {
+    border-left: 1px dotted #6AB745;
+    padding-left: 40px; }
+  @media only screen and (max-width: 800px) {
+    .build-menu {
+      flex-direction: column; }
+      .build-menu h3, .build-menu li {
+        text-align: center; }
+      .build-menu li {
+        list-style: none; }
+      .build-menu .build-right {
+        border: none; } }
+
+.step {
+  color: #6AB745; }
+
+.step-item {
+  color: #0173BC; }
+
+.list-item {
+  padding-left: 20px; }
+
+.sides {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  .sides .sides-name, .sides .sides-price {
+    flex-grow: 1; }
+
+.contact {
+  background: linear-gradient(white, #BBE6F6);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+  padding-top: 40px; }
+  .contact h1 {
+    text-align: center;
+    padding-bottom: 20px; }
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around; }
+  @media only screen and (max-width: 800px) {
+    .contact-wrapper {
+      flex-direction: column;
+      justify-content: center; } }
+
+.contact-info {
+  background-color: white;
+  padding: 40px; }
+  @media only screen and (max-width: 800px) {
+    .contact-info {
+      margin-top: 10px;
+      width: 100%; } }
+  .contact-info h2 {
+    padding-top: 20px;
+    text-align: center;
+    text-transform: uppercase; }
+  .contact-info p {
+    font-size: .8em;
+    text-align: center; }
+  .contact-info .hours {
+    padding-bottom: 10px; }
+
+.contact-location {
+  flex-grow: 1; }
+  @media only screen and (max-width: 800px) {
+    .contact-location {
+      margin-top: 10px; } }
+
+.footer {
+  align-items: center;
+  background-color: #6AB745;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: space-around;
+  opacity: .8; }
+  .footer li {
+    list-style: none;
+    text-transform: uppercase; }
+    .footer li a {
+      color: white;
+      text-decoration: none;
+      text-shadow: 0px 0px 3px black; }
+
+ul.footer {
+  bottom: 0;
+  padding-left: 0;
+  width: 100%; }
+  ul.footer li.footer-hours {
+    display: none; }
+  ul.footer li.footer-pin {
+    display: none; }
+  ul.footer li.footer-tel {
+    display: none; }
+
+ul.modal-hours li {
+  list-style: none; }
+
+@media only screen and (max-width: 800px) {
+  ul.topnav {
+    align-items: center; }
+    ul.topnav li:not(:nth-child(1)) {
+      display: none; }
+    ul.topnav li.logo {
+      margin: 0 auto; }
+    ul.topnav li.dropdownIcon {
+      display: block;
+      padding-right: 10px; }
+
+  ul.responsive {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    z-index: 9999; }
+    ul.responsive li {
+      display: inline;
+      list-style: none;
+      float: none;
+      z-index: 99999; }
+      ul.responsive li a {
+        color: white;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        text-decoration: none; }
+
+  ul.responsive li.dropdownIcon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10px; }
+
+  ul.footer li {
+    display: none; }
+
+  ul.footer li.footer-hours {
+    display: block; }
+  ul.footer li.footer-pin {
+    display: block; }
+  ul.footer li.footer-tel {
+    display: block; } }
+
+/*# sourceMappingURL=styles.css.map */
