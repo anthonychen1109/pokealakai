@@ -32,7 +32,7 @@ const Signature = () => {
     <div className="signature">
       <div className="container">
         <h2>Signature&nbsp;Bowls</h2>
-        <div className="svgFlag">
+        <div className="svgFlag-signature">
           <svg width='100%' height='100%'
             preserveAspectRatio="none"
             viewBox="0 0 100 100">
