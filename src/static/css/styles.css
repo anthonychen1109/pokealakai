@@ -5,10 +5,18 @@
 ul {
   margin-bottom: 0; }
 
-.svgFlag {
+.svgFlag-signature {
   width: 100%;
   height: 64px;
   margin: 50px 0 30px 0; }
+  .svgFlag-signature polyline {
+    fill: #6AB745;
+    stroke-width: 0; }
+
+.svgFlag {
+  width: 100%;
+  height: 64px;
+  margin: 150px 0 30px 0; }
   .svgFlag polyline {
     fill: #6AB745;
     stroke-width: 0; }
@@ -43,14 +51,17 @@ li {
   background-size: cover;
   height: 100vh; }
   .about .about-text {
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); }
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: relative; }
+    .about .about-text .about-text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
     .about .about-text .about-header {
       padding-bottom: 10px; }
     .about .about-text .about-para {
-      background-color: black;
       margin: 0 auto;
       max-width: 50%;
       padding: 10px; }
