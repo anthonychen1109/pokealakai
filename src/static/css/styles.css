@@ -7,10 +7,20 @@ ul {
 
 .svgFlag {
   width: 100%;
-  height: 64px; }
+  height: 64px;
+  margin: 50px 0 30px 0; }
   .svgFlag polyline {
     fill: #6AB745;
     stroke-width: 0; }
+
+h1, h2 {
+  font-family: 'Alegreya', serif; }
+
+p {
+  font-family: 'Signika', sans-serif; }
+
+li {
+  font-family: 'Maven Pro', sans-serif; }
 
 .header {
   background-image: url("../images/bg.jpg");
@@ -24,6 +34,33 @@ ul {
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%; }
+
+.about {
+  background-image: url("../images/parallax1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .about .about-text {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+    .about .about-text .about-header {
+      padding-bottom: 10px; }
+    .about .about-text .about-para {
+      background-color: black;
+      margin: 0 auto;
+      max-width: 50%;
+      padding: 10px; }
+      @media only screen and (max-width: 800px) {
+        .about .about-text .about-para {
+          max-width: 80%; } }
+  .about h1, .about p {
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 3px black; }
 
 .signature {
   background: linear-gradient(#BBE6F6, white);
@@ -66,6 +103,9 @@ ul {
       .build-menu .build-right {
         border: none; } }
 
+.build-left h3, .build-right h3 {
+  padding: 10px 0 10px 0; }
+
 .step {
   color: #6AB745; }
 
@@ -73,13 +113,26 @@ ul {
   color: #0173BC; }
 
 .list-item {
+  padding-bottom: 5px;
   padding-left: 20px; }
+
+.side {
+  padding-bottom: 20px;
+  padding-top: 20px; }
 
 .sides {
   display: grid;
   grid-template-columns: 1fr 1fr; }
   .sides .sides-name, .sides .sides-price {
     flex-grow: 1; }
+
+.parallax {
+  background-image: url("../images/parallax2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh; }
 
 .contact {
   background: linear-gradient(white, #BBE6F6);
@@ -101,7 +154,7 @@ ul {
 
 .contact-info {
   background-color: white;
-  padding: 40px; }
+  padding: 5px; }
   @media only screen and (max-width: 800px) {
     .contact-info {
       margin-top: 10px;
@@ -198,8 +251,12 @@ ul.modal-hours li {
 
   ul.footer li.footer-hours {
     display: block; }
+    ul.footer li.footer-hours:hover {
+      cursor: pointer; }
   ul.footer li.footer-pin {
     display: block; }
+    ul.footer li.footer-pin:hover {
+      cursor: pointer; }
   ul.footer li.footer-tel {
     display: block; } }
 
