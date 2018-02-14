@@ -57,18 +57,33 @@ li {
 }
 
 //############################ NAVBAR ############################
-.navbar {
-  background-color: #6AB745;
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    li {
-      list-style: none;
-      a {
-        color: white;
-        text-decoration: none;
-      }
+ul.topnav {
+  align-items: center;
+  background-color: $nav-background-color;
+  color: $nav-anchor-color;
+  display: flex;
+  font-family: $font;
+  font-size: $nav-font-size;
+  height: $nav-height;
+  justify-content: space-around;
+  opacity: $opacity;
+  padding-left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+  li {
+    list-style: none;
+    a {
+      color: $nav-anchor-color;
+      text-decoration: none;
+      text-transform: uppercase;
     }
+  }
+}
+
+ul.topnav {
+  li.dropdownIcon {
+    display: none;
   }
 }
 
@@ -79,6 +94,7 @@ li {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  padding-top: 40px;
   img {
     position: absolute;
     left: 50%;
@@ -316,7 +332,7 @@ ul.modal-hours {
 
 @media only screen and (max-width: 800px) {
 // ################### NAVBAR #####################
-  ul.topnav {
+ul.topnav {
     align-items: center;
     li:not(:nth-child(1)) {
       display: none;
