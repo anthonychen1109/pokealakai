@@ -29,7 +29,7 @@ const signature = [
 
 const Signature = () => {
   return (
-    <div className="signature">
+    <div id="menu" className="signature">
       <div className="container">
         <h2>Signature&nbsp;Bowls</h2>
         <div className="svgFlag-signature">
