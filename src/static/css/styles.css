@@ -30,6 +30,30 @@ p {
 li {
   font-family: 'Maven Pro', sans-serif; }
 
+.up-btn {
+  border: 1px solid black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 5%;
+  z-index: 99999; }
+  .up-btn:hover {
+    cursor: pointer; }
+  @media only screen and (max-width: 800px) {
+    .up-btn {
+      margin: 0 5% 10% 0; } }
+
+.navbar {
+  background-color: #6AB745; }
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly; }
+    .navbar ul li {
+      list-style: none; }
+      .navbar ul li a {
+        color: white;
+        text-decoration: none; }
+
 .header {
   background-image: url("../images/bg.jpg");
   background-position: center;
@@ -67,7 +91,8 @@ li {
       padding: 10px; }
       @media only screen and (max-width: 800px) {
         .about .about-text .about-para {
-          max-width: 80%; } }
+          max-width: 100%;
+          padding: 0; } }
   .about h1, .about p {
     color: white;
     text-align: center;
