@@ -43,6 +43,7 @@ li {
 
 .up-btn {
   border: 1px solid black;
+  display: none;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -65,7 +66,7 @@ ul.topnav {
   font-family: $font;
   font-size: $nav-font-size;
   height: $nav-height;
-  justify-content: space-around;
+  justify-content: center;
   opacity: $opacity;
   padding-left: 0;
   top: 0;
@@ -73,6 +74,10 @@ ul.topnav {
   z-index: 9000;
   li {
     list-style: none;
+    padding: 0 50px;
+    @media only screen and (max-width: 800px) {
+      padding: 0;
+    }
     a {
       color: $nav-anchor-color;
       text-decoration: none;

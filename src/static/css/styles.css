@@ -32,6 +32,7 @@ li {
 
 .up-btn {
   border: 1px solid black;
+  display: none;
   position: fixed;
   right: 0;
   bottom: 0;
@@ -51,14 +52,18 @@ ul.topnav {
   font-family: "brandon_light";
   font-size: 14px;
   height: 40px;
-  justify-content: space-around;
+  justify-content: center;
   opacity: 0.8;
   padding-left: 0;
   top: 0;
   width: 100%;
   z-index: 9000; }
   ul.topnav li {
-    list-style: none; }
+    list-style: none;
+    padding: 0 50px; }
+    @media only screen and (max-width: 800px) {
+      ul.topnav li {
+        padding: 0; } }
     ul.topnav li a {
       color: white;
       text-decoration: none;
