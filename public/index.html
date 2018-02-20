@@ -46,8 +46,9 @@
     <script type="text/javascript">
       $(window).on('scroll', function() {
         let y = $(this).scrollTop();
-        if (y > 20) {
+        if (y > 100) {
           $('.up-btn').css({ opacity: 1 });
+          $('.up-btn').css('display', 'block');
         } else {
           $('.up-btn').css({ opacity: 0 });
         }
